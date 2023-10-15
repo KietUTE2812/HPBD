@@ -24,8 +24,10 @@ background: #FDE3A7; /*CAPE HONEY*/
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
-    bottom: 100px;
+    position: absolute; /* Đặt button ở vị trí tuyệt đối */
+    top: 70%; /* Đặt button ở giữa màn hình theo chiều dọc */
+    left: 50%; /* Đặt button ở giữa màn hình theo chiều ngang */
+    transform: translate(-50%, -50%); 
     display: inline-block;
      box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
      7px 7px 20px 0px rgba(0,0,0,.1),

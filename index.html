@@ -13,7 +13,8 @@
     <section>
         <canvas id="birthdayCanvas"></canvas>
         <button class="custom-btn btn-9" id="button1">Click Here</button>
-        
+        <button class="custom-btn btn-9" id="button2">Click Here</button>
+
     </section>
 
     <div class="card" id="cardB">
@@ -36,8 +37,33 @@
                     <p class="text-right">♥Sarah</p>
         </div>
     </div>
+    <div class="cardA" id="cardA">
+        <div class="imgBoxA">
+            <div class="barkA"></div>
+            <img src="./PicProj.png">
+        </div>
+        <div class="detailsA">
+            <h4 class="color1A">You're not a Fossil! (YET)</h2>
+                <h4 class="color2A">(HAPPY BIRTHDAY)</h3>
+                    <p>Dear Dad,</p>
+                    <p>Let's see.. .</p>
+                    <p>You’re never around, you</p>
+                    <p>hate the music I’m into, you</p>
+                    <p>practically despise the movies I</p>
+                    <p>like, and yet somehow you still</p>
+                    <p>manage to be the best dad every year.</p>
+                    <p>How do you do that? :)</p>
+                    <p class="text-rightA">Happy Birthday, papa!</p>
+                    <p class="text-rightA">♥Sarah</p>
+        </div>
+    </div>
     <script>
-
+        setTimeout(function() {
+            let button = document.getElementById('button1');
+            button.style.display = 'block';
+            let button2 = document.getElementById('button2');
+            button2.style.display = 'block';
+        }, 3000);
 
         var button = document.getElementById("button1");
         var card = document.getElementById("cardB");
@@ -52,7 +78,19 @@
                 card.style.display = 'none';
             }
         });
+        var button1 = document.getElementById("button2");
+        var cardA = document.getElementById("cardA");
 
+        button1.addEventListener('click', function () {
+            // Kiểm tra trạng thái hiển thị của thẻ
+            if (cardA.style.display === 'none' || cardA.style.display === '') {
+                // Nếu thẻ đang ẩn hoặc chưa được thiết lập, hiển thị thẻ
+                cardA.style.display = 'block';
+            } else {
+                // Nếu thẻ đang hiển thị, ẩn nó
+                cardA.style.display = 'none';
+            }
+        });
         //CANVAS
         const c = document.getElementById("birthdayCanvas");
 
@@ -461,7 +499,13 @@
 
             ctx.font = opts.charSize + 'px Verdana';
         })
-    
+
+
+
+
+
+
+        
     </script>
 </body>
 

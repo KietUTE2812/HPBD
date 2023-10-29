@@ -12,15 +12,15 @@
 <body>
     <section>
         <canvas id="birthdayCanvas"></canvas>
-        <button class="custom-btn btn-9" id="button1">Click Here</button>
-        <button class="custom-btn btn-9" id="button2">Click Here</button>
+        <button class="custom-btn btn-9" id="button1">Thư Zõ</button>
+        <button class="custom-btn btn-9" id="button2">Như Ngọk</button>
 
     </section>
 
     <div class="card" id="cardB">
         <div class="imgBox">
             <div class="bark"></div>
-            <img src="./PicProj.png">
+            <img src="./ThuVo.png">
         </div>
         <div class="details">
             <h4 class="color1">You're not a Fossil! (YET)</h2>
@@ -40,7 +40,7 @@
     <div class="cardA" id="cardA">
         <div class="imgBoxA">
             <div class="barkA"></div>
-            <img src="./PicProj.png">
+            <img src="./NhuNgoc.png">
         </div>
         <div class="detailsA">
             <h4 class="color1A">You're not a Fossil! (YET)</h2>
@@ -102,7 +102,7 @@
             ctx = c.getContext('2d'),
 
             hw = w / 2, // half-width
-            hh = h / 2,
+            hh = h / 2.5,
 
             opts = {
                 strings: ['HAPPY', 'BIRTHDAY!'],
@@ -462,9 +462,9 @@
             ctx.fillStyle = '#111';
             ctx.fillRect(0, 0, w, h);
 
-            var backgroundImage = new Image();
-            backgroundImage.src = './backGr.JPG'; // Thay đổi thành đường dẫn ảnh nền của bạn
-            ctx.drawImage(backgroundImage);
+            // var backgroundImage = new Image();
+            // backgroundImage.src = './backGr.JPG'; // Thay đổi thành đường dẫn ảnh nền của bạn
+            // ctx.drawImage(backgroundImage, 0, 0, w, h);
 
             ctx.translate(hw, hh);
 

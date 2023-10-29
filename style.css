@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 body {
     font-family: 'Indie Flower', cursive !important;
-    background: #000000; /*CAPE HONEY*/
+    background: hsl(0, 0%, 0%); /*CAPE HONEY*/
     margin: 0px;
     padding: 0px;
-    
+    overflow: hidden;
 }
-
+#birthdayCanvas{
+    background-image: url('./backGr.JPG'); /* Thay đổi thành đường dẫn hình ảnh nền của bạn */
+    background-size: cover; /* Đảm bảo hình nền đầy màn hình */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+}
 ::selection {
     background: transparent;
 }
@@ -16,7 +20,7 @@ body {
     display: none;
     position: absolute; /* Đặt button ở vị trí tuyệt đối */
     top: 85%; /* Đặt button ở giữa màn hình theo chiều dọc */
-    left: 31%; /* Đặt button ở giữa màn hình theo chiều ngang */
+    left: 27%; /* Đặt button ở giữa màn hình theo chiều ngang */
 }
   #button2{
     display: none;
@@ -91,7 +95,7 @@ h4 {
     color: #013243; /*SHERPA BLUE*/
     position: absolute;
     top: 50%;
-    right: 50%;
+    right: 55%;
     
     height: 400px;
     background: #e0e1dc;

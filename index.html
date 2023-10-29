@@ -462,6 +462,10 @@
             ctx.fillStyle = '#111';
             ctx.fillRect(0, 0, w, h);
 
+            var backgroundImage = new Image();
+            backgroundImage.src = './backGr.JPG'; // Thay đổi thành đường dẫn ảnh nền của bạn
+            ctx.drawImage(backgroundImage);
+
             ctx.translate(hw, hh);
 
             var done = true;

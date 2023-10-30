@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 body {
-    font-family: 'Indie Flower', cursive !important;
+    font-family: 'Dancing Script', cursive !important;
     background: hsl(0, 0%, 0%); /*CAPE HONEY*/
     margin: 0px;
     padding: 0px;
@@ -83,7 +84,7 @@ body {
 h4 {
     font-size: 26px;
     line-height: 1px;
-    font-family: 'Indie Flower', cursive !important;
+    font-family: 'Amatic SC', cursive !important;
 }
 
 .color1{color:#1BBC9B}/*MOUNTAIN MEADOW*/
@@ -252,16 +253,16 @@ box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
     margin-top: 70px;
 }
 .card .details p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 5px;
     transform: rotate(-10deg);
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
 }
 .cardA .detailsA p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 5px;
     transform: rotate(-10deg);
-    padding: 0 0 0 20px;
+    padding: 0 0 0 10px;
 }
 .card .details h4 {
     text-align: center;

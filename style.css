@@ -8,6 +8,23 @@ body {
     padding: 0px;
     overflow: hidden;
 }
+/* CSS chung cho tất cả các thiết bị */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Media Query cho thiết bị có chiều rộng màn hình tối đa 600px */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 100%;
+    }
+}
+
 #birthdayCanvas{
     background-image: url('./backGr.JPG'); /* Thay đổi thành đường dẫn hình ảnh nền của bạn */
     background-size: cover; /* Đảm bảo hình nền đầy màn hình */
@@ -95,8 +112,8 @@ h4 {
 .card {
     color: #013243; /*SHERPA BLUE*/
     position: absolute;
-    top: 50%;
-    right: 55%;
+    top: 40%;
+    left: 27%;
     
     height: 400px;
     background: #e0e1dc;
@@ -113,7 +130,7 @@ h4 {
 .cardA {
     color: #013243; /*SHERPA BLUE*/
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 75%;
     
     height: 400px;
@@ -172,7 +189,7 @@ h4 {
 .cardA:after {
     content: '';
     position: absolute;
-    top: 0;
+    top: -5px;
     right: -5px;
     width: 5px;
     height: 100%;
@@ -210,13 +227,17 @@ h4 {
     opacity: 0;
     transition: .7s;
 }
-.card .imgBox img {
-    min-width: 250px;
-    max-height: 400px;
-}
+.card .imgBox img,
 .cardA .imgBoxA img {
     min-width: 250px;
     max-height: 400px;
+}
+@media screen and (max-width: 600px) {
+    .card .imgBox img,
+    .cardA .imgBoxA img {
+        min-width: auto; /* Bỏ giá trị min-width */
+        max-height: auto; /* Bỏ giá trị max-height */
+    }
 }
 .card:hover .imgBox {
     transform: rotateY(-135deg);
